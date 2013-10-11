@@ -7,6 +7,8 @@ development:
   <<: *defaults
   host: 127.0.0.1
   database: appstore_dev
+  username: <%=ENV['MYSQL_USERNAME']%>
+  password: <%=ENV['MYSQL_PASSWORD']%>
   
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
