@@ -17,6 +17,8 @@ test:
   <<: *defaults
   host: 127.0.0.1
   database: appstore_test
+  username: <%=ENV['MYSQL_USERNAME']%>
+  password: <%=ENV['MYSQL_PASSWORD']%>
 
 staging:
   <<: *defaults
